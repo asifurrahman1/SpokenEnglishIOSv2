@@ -5,6 +5,6 @@ This is an IOS application for English Learning Purpose.
 # A quiz module of MCQ format to test learning progress and provide result .The question MCQ sheet can be uploded via server and intergate into this app. 
 # Also contains a video player integration to play video tutorial from server.
 # Google login to maintain account.
+<img src="https://s25.postimg.org/m1zloa2kf/Screen_Recording.gif" >
 
-<img src="Screen_Recording.gif"  height="300" width="200">
  
