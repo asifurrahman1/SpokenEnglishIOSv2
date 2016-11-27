@@ -97,8 +97,7 @@ class Tutorial:BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, U
    }
     
     
-    
-    
+    /*
     
     func  addWeeks(){
         //--------------------------------------------------
@@ -155,7 +154,7 @@ class Tutorial:BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, U
        // weeks = [week1,week1,week1,week1,week1,week1,week1]
         
     }
-    
+    */
    
     
     lazy var collectionView: UICollectionView = {
