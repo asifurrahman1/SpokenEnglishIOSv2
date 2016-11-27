@@ -21,6 +21,7 @@ class VideoLessonParsing{
                     if let name = element["Name"] as? String{
                         if let url = element["Link"] as? String{
                             print("\(name)-----------\(url)")
+                           
                             //############## CORE DATA SAVE ###################
                             let app = UIApplication.sharedApplication().delegate as! AppDelegate
                             let context = app.managedObjectContext
@@ -35,6 +36,7 @@ class VideoLessonParsing{
                             
                             do{
                                 try context.save()
+                                print("successfully saved")
                             }catch{
                                 fatalError("ERRR")
                             }

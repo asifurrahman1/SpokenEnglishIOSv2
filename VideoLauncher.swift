@@ -11,15 +11,16 @@ import AVFoundation
 
 class VideoPlayerView: UIView {
     
+    var tutorialLink = String()
     var urlLink:String?{
         didSet{
-            self.tutorialLink = urlLink!
+            self.tutorialLink = "https://www.youtube.com/watch?v=\(urlLink!)"
             print("############")
             print(tutorialLink)
             setupPlayerView()
         }
     }
-    var tutorialLink = String()
+  
     
     let activityIndicatorView: UIActivityIndicatorView = {
         let aiv = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
@@ -58,6 +59,7 @@ class VideoPlayerView: UIView {
     func stopVideo(){
         if isPlaying{
             self.player?.pause()
+            print("Left player")
         }
     }
     

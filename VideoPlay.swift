@@ -25,7 +25,7 @@ class VideoPlay: UIViewController {
         if parent == nil {
             //EDITED LAST==========
             self.videoLauncher.videoplayer.stopVideo()
-            print("Left player")
+            
         }
     }
 }

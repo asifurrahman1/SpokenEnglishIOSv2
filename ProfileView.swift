@@ -102,7 +102,7 @@ class ProfileView:BaseCell{
         
         backgroundColor = Colors.ProfileBackgroundColor//UIColor.blueColor()
         addSubview(imageView)
-        addConstraintsWithFormat("H:|-100-[v0(200)]|", views: imageView)
+        addConstraintsWithFormat("H:|-100-[v0]-100-|", views: imageView)
         addConstraintsWithFormat("V:|-5-[v0(200)]", views: imageView)
         
         
@@ -117,10 +117,6 @@ class ProfileView:BaseCell{
         //   addSubview(signInButton)
         //   addConstraintsWithFormat("H:|[v0]|", views: signInButton)
         //   addConstraintsWithFormat("V:|-333-[v0(50)]", views: signInButton)
-        
-        
-        
-        
         
         
         addSubview(profileEmail)

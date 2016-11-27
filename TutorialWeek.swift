@@ -11,15 +11,11 @@ import UIKit
 
 class TutorialWeek:NSObject{
     var WeekNo: Int?
-    var Sub: Subject?
     var days:[PerDay]?
 }
 
 
-class Subject:NSObject{
-    var subject_name:String?
-    var Total_hours:Int?
-}
+
 
 
 class PerDay:NSObject{

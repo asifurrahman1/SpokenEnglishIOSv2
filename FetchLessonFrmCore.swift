@@ -15,7 +15,7 @@ class FetchLessonFrmCore{
     var Obj = [VideoLessonModel]()
     var fetchResultController:NSFetchedResultsController!
     
-    func fetchAndSetResult(){
+    func fetchAndSetResult()->[VideoLessonModel]{
         
         
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -25,11 +25,16 @@ class FetchLessonFrmCore{
         do{
             let results = try context.executeFetchRequest(fetchreq)
             Obj = results as! [VideoLessonModel]
+            print("Core data fetch successful")
+            
+            
         }catch let err as NSError{
             print(err.description)
+             print("fetch unsuccessful")
             print("ERR")
+    
         }
-        
+        return Obj
     }
     
     // func PrintResult(){

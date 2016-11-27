@@ -11,17 +11,24 @@ import UIKit
 class TutorialCell: BaseCell{
     
     
+     //#LOAD DATA FROM CORE HERE
+             //
+    
+    
+     //#LOAD DATA FROM CORE HERE
+    
+    
+    
+    
+    
+    
     var Week: TutorialWeek? {
         didSet{
-            
             self.week.text = String("Week no : \(Week!.WeekNo!)")
-            // print(Week?.Sub?.subject_name!)
+             //print(Week?.Sub?.subject_name!)
         }
     }
-    
-    
-    
-    
+
     
     let week: UILabel = {
         let w = UILabel()
@@ -29,12 +36,12 @@ class TutorialCell: BaseCell{
         w.backgroundColor =  Colors.WeekCellColor //UIColor.blueColor()
         w.textColor = Colors.WeekCellTextColor//UIColor.whiteColor()
         //=========================================
-        w.text = "Week no"
+       // w.text = "Week no"
         w.textAlignment = .Center
         return w
     }()
-    
-    let Sub: UILabel = {
+
+/*    let Sub: UILabel = {
         let s = UILabel()
         //=======================================
         s.backgroundColor = Colors.WeekCellColor//UIColor.blueColor()
@@ -45,19 +52,18 @@ class TutorialCell: BaseCell{
         return s
     }()
     
-    
+    */
     
     
     override func setupViews() {
         super.setupViews()
         backgroundColor = Colors.body
         addSubview(week)
-        addSubview(Sub)
+        //addSubview(Sub)
         addConstraintsWithFormat("H:|[v0]|", views: week)
-        addConstraintsWithFormat("H:|[v0]|", views: Sub)
-        addConstraintsWithFormat("V:|-1-[v0(48)]", views: week)
-        addConstraintsWithFormat("V:|-49-[v0(48)]", views: Sub)
-        
+       // addConstraintsWithFormat("H:|[v0]|", views: Sub)
+        addConstraintsWithFormat("V:|[v0]|", views: week)
+        //addConstraintsWithFormat("V:|-49-[v0(48)]", views: Sub)
     }
     
     

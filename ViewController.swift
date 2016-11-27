@@ -52,6 +52,7 @@ class ViewController: UIViewController, HolderViewDelegate {
         let layout = UICollectionViewFlowLayout()
         //        layout.scrollDirection = .Horizontal
         window?.rootViewController = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout))
+        //########## after splash view calling main view ############
         
     }
     

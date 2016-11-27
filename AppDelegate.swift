@@ -22,17 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //*****************************************************************
         //#############CHANGED FOR SPLASH SCREEN###############
-        
-        
-        
-        
         DataPreLoad()
-        
-        
-        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.makeKeyAndVisible()
-        
         //let layout = UIViewLayo()
         //        layout.scrollDirection = .Horizontal
         window?.rootViewController = UINavigationController(rootViewController: ViewController())
@@ -57,15 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //*****************************************************************
         
-        
-        
-        
-
-        
-        
-        
-        
-        
         return true
     }
 
@@ -78,12 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         toCore.JASON2Core(url)
         //###########################
         //###########################
-        
-
-        
-
-         //###########################
     
+         //###########################
     }
     
     
